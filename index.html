@@ -23,26 +23,26 @@
     </div>
     <div class="mb-3">
       <label for="exampleFormControlInput2" class="form-label">Employee Name</label>
-      <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Your Name">
+      <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Your Name" required>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlInput3" class="form-label">Employee Email</label>
-      <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Your Email">
+      <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Your Email" required>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlInput4" class="form-label">Employee Age</label>
-      <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Your Age">
+      <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Your Age" required>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlInput5" class="form-label">Employee Mobile Number</label>
-      <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Your Mobile Number">
+      <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Your Mobile Number" required>
     </div>
 
     <!------------------------Butttons----------------------------->
 
     <div>
-      <button type="button" class="btn btn-primary" onclick="saveEmployee()">Save</button>
-      <button type="button" class="btn btn-secondary" onclick="updateEmployee()">Update</button>
+      <button type="button" class="btn btn-primary" id="saveBtn" onclick="validateAndSaveEmployee()">Save</button>
+      <button type="button" class="btn btn-secondary" id="updateBtn" onclick="validateAndUpdateEmployee()">Update</button>
       <button type="button" class="btn btn-success" onclick="deleteEmployee()">Delete</button>
     </div>
 
