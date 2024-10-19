@@ -1,24 +1,25 @@
 getAllEmployees();
 
-//.........................save function.............................//
+//................ Validate and save employee..........................//
 
-// Validate and save employee
 function validateAndSaveEmployee() {
     let name = $('#exampleFormControlInput2').val().trim();
     let email = $('#exampleFormControlInput3').val().trim();
     let age = $('#exampleFormControlInput4').val().trim();
     let mobile = $('#exampleFormControlInput5').val().trim();
 
-    // Validate before calling saveEmployee function
+    //......... Validate before calling saveEmployee function...............//
+
     if (name === "" || email === "" || age === "" || mobile === "") {
         alert("All fields are required!");
-        return; // Stop if any field is empty
+        return;
     }
 
-    saveEmployee(); // Call save function if validation passes
+    saveEmployee();
 }
 
-// Validate and update employee
+//.............. Validate and update employee.......................//
+
 function validateAndUpdateEmployee() {
     let id = $('#exampleFormControlInput1').val().trim();
     let name = $('#exampleFormControlInput2').val().trim();
@@ -26,14 +27,17 @@ function validateAndUpdateEmployee() {
     let age = $('#exampleFormControlInput4').val().trim();
     let mobile = $('#exampleFormControlInput5').val().trim();
 
-    // Validate before calling updateEmployee function
+    //........ Validate before calling updateEmployee function.......//
+
     if (id === "" || name === "" || email === "" || age === "" || mobile === "") {
         alert("All fields are required!");
-        return; // Stop if any field is empty
+        return;
     }
 
-    updateEmployee(); // Call update function if validation passes
+    updateEmployee();
 }
+
+//.........................save function.............................//
 
 function saveEmployee() {
 
